@@ -6,7 +6,7 @@ Soal SUBCPMK 2
 Buatlah fungsi dari salah satu algoritma sorting pada soal nomor 1, dan berikan penjelasan pada program tersebut
 JAWABAN
 Merge sort
-
+```c++
 #include <iostream>
 using namespace std;
 
@@ -73,6 +73,7 @@ int main() {
 
    return 0;
 }
+```
 Output
 image
 
@@ -86,7 +87,7 @@ Soal SubCPMK 3
 Buatlah fungsi dari salah satu algoritma searching pada soal nomor 1, dan berikan penjelasan pada program tersebut
 JAWABAN
 Binary Search
-
+```c++
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -135,7 +136,7 @@ int main() {
 
     return 0;
 }
-
+```
 Output
 image
 
@@ -146,6 +147,7 @@ SubCPMK 4
 Berikan penjelasan dari struct dan buatlah sebuah contoh program dari struct!
 
 JAWABAN
+```c++
 #include <iostream>
 #include <string>
 
@@ -190,7 +192,7 @@ int main() {
 
     return 0;
 }
-
+```
 OUTPUT
 image
 
@@ -201,6 +203,7 @@ Soal SubCPMK 5
 Buatlah sebuah program untuk mengecek apakah linked list adalah sebuah palindrom
 
 JAWABAN
+```c++
 #include <iostream>
 #include <stack>
 
@@ -273,6 +276,7 @@ int main() {
 
     return 0;
 }
+```
 Output
 image
 
@@ -283,6 +287,7 @@ Soal SubCPMK 6
 Tulislah sebuah program untuk mensortir sebuah stack, sehingga item dengan nilai terkecil menjadi top pada stack tersebut! Diperbolehkan menggunakan tambahan temporary stack, namun tidak diperbolehkan untuk menyalin dari struktur data yang lain seperti array. Program stack yang dibuat dapat menggunakan operasi stack seperti push, pop, peek, dan isEmpty
 
 JAWABAN
+```c++
 #include <iostream>
 #include <stack>
 
@@ -345,7 +350,7 @@ int main() {
 
     return 0;
 }
-
+```
 Output
 image
 
@@ -360,6 +365,7 @@ Soal SubCPMK 7
 Sebuah selter hewan terlantar, yang mana hanya menerima kucing dan anjing, menerapkan konsep “first in, first out” dalam proses adopsi. Orang-orang yang hendak mengadopsi harus mengikuti aturan berikut: 1) mengadopsi hewan yang paling “tua” (berdasarkan waktu masuk ke selter) dan tidak dapat memilih kucing atau anjing; 2) memilih antara kucing atau anjing, namun akan menerima yang paling tua. Buatlah data struktur untuk mengimplementasikan kondisi tersebut, silahkan menggunakan beberapa operasi queue seperti enquee, dequeueAny, dequeueDog, dan dequeueCat
 
 JAWABAN
+```c++
 #include <iostream>
 #include <queue>
 #include <string>
@@ -459,6 +465,7 @@ int main() {
 
     return 0;
 }
+```
 output
 image
 
