@@ -1,1 +1,0 @@
-# Strukur-data-teori-Assignment
