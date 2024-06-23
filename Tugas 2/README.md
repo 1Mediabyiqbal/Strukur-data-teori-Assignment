@@ -1,12 +1,11 @@
 # <h1 align="center">TUGAS</h1>
 <p align="center">Muhammad Iqbal (NIM 2311110013)</p>
 
-
 ### Soal SUBCPMK 2
 
 #### Buatlah fungsi dari salah satu algoritma sorting pada soal nomor 1, dan berikan penjelasan pada program tersebut
 
-### JAWABAN
+#### JAWABAN
 > Merge sort
 ```c++
 #include <iostream>
@@ -91,9 +90,10 @@ Merge Sort adalah salah satu algoritma pengurutan yang menggunakan pendekatan di
 
 ### Soal SubCPMK 3
 
-Buatlah fungsi dari salah satu algoritma searching pada soal nomor 1, dan berikan penjelasan pada program tersebut
-JAWABAN
-Binary Search
+#### Buatlah fungsi dari salah satu algoritma searching pada soal nomor 1, dan berikan penjelasan pada program tersebut
+
+#### JAWABAN
+> Binary Search
 ```c++
 #include <iostream>
 #include <vector>
@@ -144,15 +144,17 @@ int main() {
     return 0;
 }
 ```
-### Output image
+### Output
+![Screenshot 2024-05-16 114329](https://github.com/greyL15ZF/Strukur-data-teori-Assignment/assets/157208590/f698d746-2918-434d-9fb1-05a7a717d724)
 
-Penjelasan
+### Penjelasan
 Binary search adalah algoritma pencarian yang efisien untuk menemukan posisi elemen dalam array yang sudah diurutkan. Algoritma ini bekerja dengan membagi array menjadi dua bagian pada setiap langkah, sehingga mengurangi jumlah elemen yang perlu diperiksa secara signifikan. Dalam implementasi binary search di C++, algoritma ini menggunakan dua variabel, left dan right, yang menunjukkan batas kiri dan kanan dari bagian array yang sedang dipertimbangkan. Selama nilai left tidak melebihi right, algoritma menghitung indeks tengah (mid) dan membandingkan nilai elemen di posisi ini dengan elemen yang dicari (target). Jika elemen di tengah sama dengan target, algoritma mengembalikan indeks tengah sebagai posisi target. Jika target lebih besar dari elemen tengah, algoritma memperbarui batas kiri (left) menjadi mid + 1, sehingga mengabaikan setengah bagian kiri dari array. Sebaliknya, jika target lebih kecil, batas kanan (right) diperbarui menjadi mid - 1, sehingga mengabaikan setengah bagian kanan dari array. Proses ini berulang hingga target ditemukan atau batas pencarian habis, dalam hal ini algoritma mengembalikan -1 sebagai tanda bahwa target tidak ditemukan. Karena setiap langkah binary search mengurangi ukuran bagian yang dipertimbangkan menjadi setengahnya, kompleksitas waktu algoritma ini adalah O(log n), membuatnya sangat efisien untuk pencarian dalam array yang besar.
 
-SubCPMK 4
-Berikan penjelasan dari struct dan buatlah sebuah contoh program dari struct!
+### SubCPMK 4
 
-JAWABAN
+#### Berikan penjelasan dari struct dan buatlah sebuah contoh program dari struct!
+
+#### JAWABAN
 ```c++
 #include <iostream>
 #include <string>
@@ -199,16 +201,17 @@ int main() {
     return 0;
 }
 ```
-OUTPUT
-image
+#### OUTPUT
+![Screenshot 2024-05-16 115055](https://github.com/greyL15ZF/Strukur-data-teori-Assignment/assets/157208590/b541939d-a98f-4007-a415-224f903ea3ed)
 
-Penjelasan
+#### Penjelasan
 Program di atas adalah contoh sederhana penggunaan struct dalam bahasa pemrograman C++. Dalam program tersebut, kita mendefinisikan sebuah struktur bernama Mahasiswa, yang memiliki empat anggota: nama, umur, jurusan, dan ipk, masing-masing dengan tipe data yang sesuai seperti std::string untuk nama dan jurusan, int untuk umur, dan double untuk IPK. Setelah mendefinisikan struktur tersebut, kita membuat dua objek mhs1 dan mhs2 dari tipe Mahasiswa di dalam fungsi utama. Kemudian, data untuk masing-masing objek diisi dengan nilai yang sesuai untuk nama, umur, jurusan, dan IPK. Data mahasiswa kemudian ditampilkan ke layar menggunakan std::cout, mencakup informasi seperti nama, umur, jurusan, dan IPK masing-masing mahasiswa. Dengan menggunakan struct, kita dapat mengorganisir dan mengelola data yang terkait secara logis, membuat kode lebih terstruktur dan mudah dibaca. Program tersebut mengilustrasikan bagaimana struct dapat digunakan dalam C++ untuk mengelompokkan informasi terkait bersama-sama dalam satu unit yang koheren.
 
-Soal SubCPMK 5
-Buatlah sebuah program untuk mengecek apakah linked list adalah sebuah palindrom
+### Soal SubCPMK 5
 
-JAWABAN
+#### Buatlah sebuah program untuk mengecek apakah linked list adalah sebuah palindrom
+
+#### JAWABAN
 ```c++
 #include <iostream>
 #include <stack>
@@ -283,16 +286,16 @@ int main() {
     return 0;
 }
 ```
-Output
-image
+#### Output
+![Screenshot 2024-05-16 120901](https://github.com/greyL15ZF/Strukur-data-teori-Assignment/assets/157208590/d2daa966-9692-4f75-95f9-9c8f447025a5)
 
-Penjelasan
+#### Penjelasan
 Program membuat linked list dengan elemen 1 -> 2 -> 3 -> 2 -> 1, dan menggunakan stack untuk menyimpan nilai dari setengah pertama linked list. Kemudian, program membandingkan nilai dari setengah kedua linked list dengan nilai yang diambil dari stack. Jika semua nilai cocok, maka linked list tersebut adalah palindrom. Sebagai hasilnya, program mencetak "Linked list adalah palindrom."
 
-Soal SubCPMK 6
+### Soal SubCPMK 6
 Tulislah sebuah program untuk mensortir sebuah stack, sehingga item dengan nilai terkecil menjadi top pada stack tersebut! Diperbolehkan menggunakan tambahan temporary stack, namun tidak diperbolehkan untuk menyalin dari struktur data yang lain seperti array. Program stack yang dibuat dapat menggunakan operasi stack seperti push, pop, peek, dan isEmpty
 
-JAWABAN
+### JAWABAN
 ```c++
 #include <iostream>
 #include <stack>
@@ -357,20 +360,21 @@ int main() {
     return 0;
 }
 ```
-Output
-image
+#### Output
+![Screenshot 2024-05-16 122031](https://github.com/greyL15ZF/Strukur-data-teori-Assignment/assets/157208590/747ef9f8-e4f5-4964-a250-ff01d15b955f)
 
-Penjelasan
+#### Penjelasan
 Program yang disajikan adalah implementasi dalam bahasa C++ untuk mengurutkan sebuah stack sehingga elemen dengan nilai terkecil menjadi elemen teratas (top) dari stack tersebut. Pendekatan yang digunakan dalam program ini didasarkan pada prinsip penyusunan ulang elemen-elemen stack dengan memanfaatkan sebuah temporary stack.
 
 Fungsi sortStack bertanggung jawab untuk melakukan pengurutan. Prosesnya dimulai dengan mengambil elemen dari stack asli satu per satu, sambil mempertahankan urutan menaik pada temporary stack. Setelah stack asli kosong, elemen-elemen yang telah diurutkan di temporary stack dipindahkan kembali ke stack asli, sehingga stack asli terurut dengan elemen terkecil berada di bagian atas.
 
 Fungsi printStack digunakan untuk menampilkan isi dari stack sebelum dan setelah pengurutan. Sedangkan di dalam fungsi main, beberapa elemen ditambahkan ke dalam stack, kemudian stack ditampilkan sebelum dan setelah diurutkan. Dengan menggunakan metode ini, program dapat memberikan hasil yang terurut secara efisien tanpa memerlukan struktur data tambahan seperti array.
 
-Soal SubCPMK 7
+### Soal SubCPMK 7
+
 Sebuah selter hewan terlantar, yang mana hanya menerima kucing dan anjing, menerapkan konsep “first in, first out” dalam proses adopsi. Orang-orang yang hendak mengadopsi harus mengikuti aturan berikut: 1) mengadopsi hewan yang paling “tua” (berdasarkan waktu masuk ke selter) dan tidak dapat memilih kucing atau anjing; 2) memilih antara kucing atau anjing, namun akan menerima yang paling tua. Buatlah data struktur untuk mengimplementasikan kondisi tersebut, silahkan menggunakan beberapa operasi queue seperti enquee, dequeueAny, dequeueDog, dan dequeueCat
 
-JAWABAN
+### JAWABAN
 ```c++
 #include <iostream>
 #include <queue>
@@ -472,7 +476,7 @@ int main() {
     return 0;
 }
 ```
-output
-image
+### Output
+![Screenshot 2024-05-16 123112](https://github.com/greyL15ZF/Strukur-data-teori-Assignment/assets/157208590/ee063d79-1a55-4fea-ad6a-a0c3467fe83f)
 
 Dalam program ini, kita menggunakan dua queue terpisah untuk menyimpan antrian anjing dan kucing. Setiap kali hewan ditambahkan ke dalam shelter (enqueue), kita menyimpan jenis hewan dan waktu masuk ke dalam shelter. Kemudian, operasi dequeueAny akan memeriksa antrean anjing dan kucing untuk mengeluarkan hewan tertua. Operasi dequeueDog dan dequeueCat mengeluarkan anjing atau kucing tertua dari antrian masing-masing.
