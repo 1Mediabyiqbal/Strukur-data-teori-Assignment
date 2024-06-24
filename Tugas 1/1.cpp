@@ -1,18 +1,22 @@
 #include <iostream>
-#include <algorithm>
+#include <unordered_set>
 
-int main() {
-    int arrA[] = {2, 1, 3, 1};
-    int panjangArrA = sizeof(arrA) / sizeof(arrA[0]);
+using namespace std;
 
-    // Mengurutkan array menggunakan algoritma sort
-    std::sort(arrA, arrA + panjangArrA);
+bool cekDuplikat(int arr[], int panjangArr) {
+    unordered_set<int> elemenSet;
+    for (int i = 0; i < panjangArr; i++) {
+        if (elemenSet.find(arr[i]) != elemenSet.end()) {
+            return true;
+        }
+        elemenSet.insert(arr[i]);
+    }
+    return false;
+}
 
-    // Mengecek keberadaan duplikat menggunakan adjacent_find
-    bool duplikat = std::adjacent_find(arrA, arrA + panjangArrA) != arrA + panjangArrA;
-
-    // Menampilkan hasil (true jika ada duplikat, false jika tidak)
-    std::cout << std::boolalpha << duplikat;
-
+int main(void) {
+    int arrA[] = {2, 1, 3, 4};
+    int panjangArr = sizeof(arrA) / sizeof(arrA[0]);
+    cout << cekDuplikat(arrA, panjangArr);
     return 0;
 }
